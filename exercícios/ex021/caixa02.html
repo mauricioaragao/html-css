@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #696969;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        h1 {
+            box-shadow: inset 4px 4px 4px 5px #00000083;
+        }
+
+        nav {
+            background-color: #7a7a7a;
+            padding: 3px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 40px;
+            box-shadow: 4px 4px 4px 1px #0000004f;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            /*margin-right: 40px;*/
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 5px 5px 8px 0px #000000;
+        }
+
+        #assuntos {
+            font-weight: bolder;
+        }
+
+        article {
+            background-color: #d3d3d3;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: #696969;
+            padding: 1px;
+            text-align: right;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > P {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 200px;
+            width: 200px;
+            background-color: #ffffff;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vero iste consequatur culpa laboriosam necessitatibus ipsam, tenetur adipisci tempora temporibus maxime eligendi nulla corrupti magni unde dolor voluptas dolorem illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quasi nulla quas sequi perferendis ad beatae eligendi eveniet, soluta praesentium dignissimos est enim distinctio corporis asperiores eius mollitia quos nesciunt?</p>
+                <aside>
+                    <p>Artigo escrito por José Carlos</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícias do Mercado Financeiro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, magni tempore! Non facere iure obcaecati eos incidunt? Temporibus doloribus officiis libero, culpa facilis voluptatum, debitis exercitationem illum, nulla minima aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, dicta commodi? Explicabo quae et mollitia, nemo perspiciatis illum ad facere, natus cumque maiores delectus distinctio quo harum voluptates. Nihil, saepe!</p>
+                <aside>
+                    <p>Escrito por Primo Rico</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

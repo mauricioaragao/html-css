@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body { /* Fontes sem serifa*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            /*
+            Medidas Absulotus
+            cm, mm, in, px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1cm
+            
+            Use px e em
+            
+            Peso das fontes
+            lighter normal bold bolder
+            */
+        }
+
+        h1 {
+            /* shorthand - vários comandos numa só linha.
+            Ordem:
+            - font-style -> font-weight -> font-size -> font-family
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro doloribus fugiat exercitationem quasi optio quaerat aliquid assumenda, minus, nobis, dignissimos sit explicabo perferendis possimus magni alias voluptates aspernatur architecto commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda commodi magnam excepturi reiciendis non. Earum a voluptate hic perferendis fuga, eos esse, ex eum nam non culpa possimus fugit eaque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque sequi vitae corrupti, fugit corporis laudantium sit deserunt incidunt optio recusandae impedit necessitatibus inventore aliquid itaque maxime suscipit magnam nostrum velit.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, ullam? Rerum deleniti, quas sequi quod voluptates deserunt rem. Dolor quos sapiente laboriosam error cum itaque iste commodi debitis dignissimos non.</p>
+</body>
+</html>
