@@ -8,16 +8,26 @@
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* Shorthand - background
+                color > image > repeat > attachment > position > [size] fica fora.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center;
             background-size: cover;
         }
         
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
