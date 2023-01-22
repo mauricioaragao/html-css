@@ -10,8 +10,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
         }
 
@@ -34,6 +41,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANTOMIA PARA TABELAS GRANDES
          TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -42,10 +50,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População do Estados brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody> <!-- tbody>(tr>td*num colunas)*num linhas-->
@@ -160,7 +169,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>213 317 639</strong></td>
             </tr>
 
