@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        .botao input{
+            background-color: rgba(0, 128, 0, 0.804);
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .botao input:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: <input type="color" name="cor" id="icor" value="#00ff00"></label>
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Saturação: <input type="range" name="nivel" id="inivel" min="1" max="5" value="2"></label>
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do perfil: <input type="file" name="foto" id="ifoto"></label>
+        </p>
+
+        <p class="botao">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

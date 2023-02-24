@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            width: 500px;
+        }
+
+        fieldset {
+            border-radius: 10px;
+            border-top: 5px solid transparent;
+        }
+
+        fieldset:nth-child(1) {
+            border-top-color: rgb(189, 128, 128);
+        }
+
+        fieldset:nth-child(2) {
+            border-top-color: rgb(109, 165, 98);
+        }
+
+        fieldset:nth-child(3) {
+            border-top-color: rgb(65, 88, 220);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label>
+            <!-- botão do tipo radio: só uma opção. tem o mesmo name -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            <input type="checkbox" name="escicl" id="iescicl" checked> <label for="iescicl">Ciclismo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comidas favoritas</legend>
+            <label for="imac"><input type="checkbox" name="mac" id="imac" checked> Macarronada</label> <br>
+            <label for="ifeij"><input type="checkbox" name="feij" id="ifeij" checked> Feijoada</label> <br>
+            <label for="iestrog"><input type="checkbox" name="estrog" id="iestrog"> Estrogonofe</label> <br>
+            <label for="ilas"><input type="checkbox" name="las" id="ilas"> Lasanha</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
