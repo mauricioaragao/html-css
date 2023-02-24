@@ -26,6 +26,20 @@
         fieldset:nth-child(3) {
             border-top-color: rgb(65, 88, 220);
         }
+
+        .botao > input {
+            font-size: 1em;
+            font-weight: bold;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .botao > input:hover {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +68,7 @@
             <label for="ilas"><input type="checkbox" name="las" id="ilas"> Lasanha</label>
         </fieldset>
 
-        <p>
+        <p class="botao">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>

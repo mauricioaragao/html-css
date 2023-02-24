@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        fieldset {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .botao > input {
+            font-size: 1em;
+            font-weight: bold;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .botao > input:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
@@ -25,7 +45,7 @@
             </p>
         </fieldset>
         <!-- Estudar sobre RegEx -->
-        <p>
+        <p class="botao">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
