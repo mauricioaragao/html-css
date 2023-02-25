@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+        }
+
+        label {
+        margin-top: 10px;
+        font-weight: bold;
+        }
+
+        input, textarea {
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+        background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+      
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+      
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function validarFormulario() {
+        var nome = document.getElementById("nome").value;
+        var email = document.getElementById("email").value;
+        var mensagem = document.getElementById("mensagem").value;
+
+        // Verifica se o nome foi preenchido
+        if (nome == "") {
+            alert("Por favor, preencha o nome");
+            return false;
+        }
+
+        // Verifica se o e-mail foi preenchido e está em um formato válido
+        if (email == "" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Por favor, preencha um e-mail válido");
+            return false;
+        }
+
+        // Verifica se a mensagem foi preenchida
+        if (mensagem == "") {
+            alert("Por favor, preencha a mensagem");
+            return false;
+        }
+
+        // O formulário está válido, pode ser enviado
+        return true;
+        }
+    </script>
+</body>
+</html>
