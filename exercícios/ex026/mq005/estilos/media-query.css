@@ -5,8 +5,14 @@
         display: none;
     }
 
+    .subheader {
+        display: flex;
+        justify-content: space-between;
+    }
+
     menu {
         display: block;
+        text-align: right;
     }
 
     menu > ul > li {

@@ -20,11 +20,21 @@ header > h1 {
     text-align: center;
 }
 
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.subheader > img {
+    width: 30px;
+}
+
 span#burguer {
     background-color: rgb(48, 48, 48);
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 10px;
 }
 
@@ -49,6 +59,7 @@ menu > ul > li > a {
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid gray;
+    border-radius: 10px 10px 0px 0px ;
 }
 
 menu > ul > li > a:hover {

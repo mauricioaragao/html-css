@@ -12,14 +12,17 @@
 <body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <div class="subheader">
+            <img src="borda.png" alt="">
+            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        </div>
         <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">O HOTEL</a></li>
+                <li><a href="#">ACOMODAÇOES</a></li>
+                <li><a href="#">POLITICAS</a></li>
+                <li><a href="#">GALERIA</a></li>
             </ul>
         </menu>
     </header>
@@ -36,7 +39,7 @@
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block';
             } else {
-                itens.style.display = 'none'
+                itens.style.display = 'none'    
             }
         }
 
