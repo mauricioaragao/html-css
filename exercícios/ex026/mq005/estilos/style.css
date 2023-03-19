@@ -12,7 +12,11 @@ body, html {
 }
 
 header {
+    display: flex;
     background-color: grey;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 90px;
 }
 
 header > h1 {
@@ -20,14 +24,9 @@ header > h1 {
     text-align: center;
 }
 
-.subheader {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
-}
-
-.subheader > img {
-    width: 30px;
+header > img {
+    width: 200px;
+    opacity: 95%;
 }
 
 span#burguer {

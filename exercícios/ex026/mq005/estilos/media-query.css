@@ -5,7 +5,7 @@
         display: none;
     }
 
-    .subheader {
+    header {
         display: flex;
         justify-content: space-between;
     }
