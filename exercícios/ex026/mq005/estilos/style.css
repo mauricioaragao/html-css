@@ -16,17 +16,12 @@ header {
     background-color: grey;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 90px;
+    padding: 0px 20px;
 }
 
 header > h1 {
     padding: 10px;
     text-align: center;
-}
-
-header > img {
-    width: 200px;
-    opacity: 95%;
 }
 
 span#burguer {
@@ -54,11 +49,12 @@ menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
+    font-size: 12px;
     text-align: center;
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid gray;
-    border-radius: 10px 10px 0px 0px ;
+    border-radius: 10px 10px 0px 0px;
 }
 
 menu > ul > li > a:hover {
