@@ -1,6 +1,6 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 
-/* Estilos para telas */
+/* Estilo para telas */
 
 * {
     margin: 0px;
@@ -22,7 +22,7 @@ header > h1 {
 
 menu ul {
     list-style-type: none;
-    background-color: gray  ;
+    background-color: grey;
 }
 
 menu li {
