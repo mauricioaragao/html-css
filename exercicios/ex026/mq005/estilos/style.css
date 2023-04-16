@@ -25,15 +25,17 @@ header > h1 {
 }
 
 span#burguer {
-    background-color: rgb(48, 48, 48);
+    background-color: transparent;
     display: block;
     color: white;
     text-align: right;
     padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 span#burguer:hover {
-    background-color: white;
+    background-color: transparent;
     color: black;
 }
 
