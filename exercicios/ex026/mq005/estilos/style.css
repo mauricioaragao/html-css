@@ -32,6 +32,7 @@ span#burguer {
     padding: 10px;
     border-radius: 50px;
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 span#burguer:hover {
