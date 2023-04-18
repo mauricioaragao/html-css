@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) {
-    span#burguer {
+   span#burguer {
         display: none;
     }
 
-    header {
+    /* header {
         display: flex;
         justify-content: space-between;
-    }
+    } */
 
     menu {
         display: block;
