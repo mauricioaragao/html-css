@@ -84,7 +84,7 @@ nav > a:hover {
 
 main {
     background-color: white ;
-    min-width: 300px;
+    min-width: 280px;
     max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
@@ -160,7 +160,7 @@ div.video > iframe {
     top: 5%;
     left: 3%;
     height: 89.5%;
-    width: 93.5%;
+    width: 93%;
 }
 
 aside {
