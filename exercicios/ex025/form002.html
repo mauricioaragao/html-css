@@ -14,18 +14,7 @@
             width: 300px;
         }
 
-        [type="submit"] {
-            width: 70px;
-            padding: 5px;
-            border: none;
-            border-radius: 2px;
-            background-color: gray;
-            color: white;
-            font-weight: bolder;
-            cursor: pointer;
-        }
-
-        [type="reset"] {
+        .buttons input {
             width: 70px;
             padding: 5px;
             border: none;
@@ -48,7 +37,7 @@
             <label for="isen">Senha: </label>
             <input type="password" name="sen" id="isen" required minlength="8" maxlength="12" size="8" placeholder="Mínimo de 8 caracteres" autocomplete="current-password">
         </p>
-        <p>
+        <p class="buttons">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
